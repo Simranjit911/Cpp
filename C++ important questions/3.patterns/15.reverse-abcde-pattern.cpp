@@ -1,19 +1,19 @@
 #include<iostream>
 using namespace std;
-// A 
-// AB
-// ABC
-// ABCD
 // ABCDE
+// ABCD
+// ABC
+// AB
+// A
+
 int main(){
     int n;
     cout<<"Enter:";
     cin>>n;
-    for(int i=1;i<=n;i++){
+    for(int i=n;i>=1;i--){
         char cnt='A';
-        for(int j=1;j<=i;j++){
+        for(int j=1;j<i;j++){
             cout<<cnt++;
-
         }
         cout<<endl;
     }

@@ -1,20 +1,22 @@
 #include<iostream>
 using namespace std;
-// A 
-// AB
-// ABC
-// ABCD
-// ABCDE
+// A
+// BB
+// CCC
+// DDDD
+// EEEEE
 int main(){
+
     int n;
     cout<<"Enter:";
     cin>>n;
+    char cht='A';
     for(int i=1;i<=n;i++){
-        char cnt='A';
-        for(int j=1;j<=i;j++){
-            cout<<cnt++;
-
+        for(int j=1;j<i;j++){
+            cout<<cht;
         }
+        cout<<cht++;
         cout<<endl;
     }
 }
+
