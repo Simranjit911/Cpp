@@ -13,4 +13,5 @@ int main(){
     for(int i=0;i<n;i++){
         cout<<i<<" has value "<<age[i]<<endl;
     }
+    cout<<sizeof(age)/sizeof(int);
 }
