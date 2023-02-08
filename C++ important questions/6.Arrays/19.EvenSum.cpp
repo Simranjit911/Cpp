@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+// Add even  number in array
 int main(){
     int n;
     cout<<"Enter n:";

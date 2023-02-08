@@ -1,8 +1,11 @@
 #include<iostream>
+// The sum of last two number=0 1 1 2 3 5 8
 using namespace std;
 int fib(int n){
-    if(n==0 or n==1) return n;
-    return fib(n-1)+fib(n-2);
+    // base case
+    if(n<2) return 1;
+    return fib(n-2)+fib(n-1);
+   
 }
 int main()
 {
