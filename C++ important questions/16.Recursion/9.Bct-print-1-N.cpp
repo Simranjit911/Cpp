@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+// prnting counting without using +
 int print(int n){
     if(n==0){
         return {};

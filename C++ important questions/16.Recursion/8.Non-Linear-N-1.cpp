@@ -1,5 +1,5 @@
 #include<iostream>
-// Reverse the counting 
+// Reverse the counting n-1
 using namespace std;
 int print(int n,int i){
     // base

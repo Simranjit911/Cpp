@@ -1,5 +1,6 @@
 #include<iostream>
 // #include<bits/stdc++.h>
+// revers ethe givn array
 using namespace std;
 void rev(int i,int n,int arr[]){
     if(i>=n/2)return ;

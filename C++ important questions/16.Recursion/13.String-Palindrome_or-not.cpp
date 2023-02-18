@@ -14,5 +14,6 @@ int main(){
     string sent;
     cout<<"Enter:";
     cin>>sent;
-    cout<<pal(0,sent);
+    int ans=pal(0,sent);
+    cout<<ans;
 }

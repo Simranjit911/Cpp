@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+// counting n-1 without 
 int print(int i){
     // base
     if(i<1) return{};

@@ -22,25 +22,67 @@ int main(){
     int n;
     cout<<"Enter :";
     cin>>n;
-    for(int i=1;i<=n;i++){
-        // spacing
-        for(int j=i;j<n;j++){
+    // for(int i=1;i<=n;i++){
+    //     // spacing
+    //     for(int j=i;j<n;j++){
+    //         cout<<" ";
+    //     }
+    //     for(int k=1;k<i;k++){
+    //         cout<<"*";
+    //         cout<<" ";
+    //     }
+    //     cout<<"\n";
+    // }
+    // for(int i=n;i>1;i--){
+    //     for(int j=i;j<n;j++){
+    //         cout<<" ";
+    //     }
+    //     for(int k=1;k<i;k++){
+    //         cout<<"*";
+    //         cout<<" ";
+    //     }
+    //     cout<<"\n";
+    // }
+
+//     *    
+//    ***
+//   *****
+//  *******
+// *********
+// *********
+//  *******
+//   *****
+//    ***
+//     *
+    //upper side
+    for(int i=0;i<n;i++){
+        //space 
+        for(int j=0;j<n-i-1;j++){
             cout<<" ";
         }
-        for(int k=1;k<i;k++){
+        //star
+        for(int k=0;k<2*i+1;k++){
             cout<<"*";
-            cout<<" ";
         }
-        cout<<"\n";
+        //space
+        for(int j=0;j<n-i-1;j++){
+            cout<<" ";
+        }cout<<endl;
     }
-    for(int i=n;i>1;i--){
-        for(int j=i;j<n;j++){
+
+    //lower side
+     for(int i=n-1;i>=0;i--){
+        //space 
+        for(int j=0;j<n-i-1;j++){
             cout<<" ";
         }
-        for(int k=1;k<i;k++){
+        //star
+        for(int k=0;k<2*i+1;k++){
             cout<<"*";
-            cout<<" ";
         }
-        cout<<"\n";
+        //space
+        for(int j=0;j<n-i-1;j++){
+            cout<<" ";
+        }cout<<endl;
     }
 }
