@@ -1,5 +1,5 @@
 // pair are used to store 2 variables
-#include<iostream>
+
 #include<bits/stdc++.h>
 using namespace std;
 void pairs(){
@@ -9,6 +9,8 @@ void pairs(){
     cout<<p1.first<<" "<<p1.second<<endl;
     pair<int,pair<int,int>> p2={4,{5,6}}; //pair inside pair
     cout<<p2.first<<" "<<p2.second.second<<" "<<" "<<p2.second.first<<endl;
+
+//array
     pair <int,int> arr[]={{1,2},{3,5},{4,5}};
     // pair has the index=  0      1     2  to ac
     cout<<arr[1].second<<" "<<arr[0].first;

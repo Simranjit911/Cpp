@@ -6,6 +6,8 @@
 4.Store data like array
 5.Its double its size once filled
 */
+
+//All important notes
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
