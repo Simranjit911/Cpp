@@ -1,28 +1,58 @@
 #include<iostream>
 using namespace std;
+// ********************
+// *********  *********
+// ********    ********
+// *******      *******
+// ******        ******
+// *****          *****
+// ****            ****
+// ***              ***
+// **                **
+// *                  *
+// *                  *
+// **                **
+// ***              ***
+// ****            ****
+// *****          *****
+// ******        ******
+// *******      *******
+// ********    ********
+// *********  *********
+// ********************
 int main(){
     int n;
     cout<<"Enter:";
     cin>>n;
-    for(int i=1;i<=n;i++){
-        for(int j=i;j<=n;j++){
-            cout<<" ";
-        }
-        for(int k=1;k<i;k++){
-            cout<<"*";
-            cout<<" ";
-        }
-        cout<<"\n";
+   //upper side
+   for(int i=0;i<n;i++){
+    //star
+    for(int j=0;j<n-i;j++){
+        cout<<"*";
     }
-    for(int i=n;i>=1;i--){
-        for(int j=i;j<=n;j++){
-            cout<<" ";
-        }
-        for(int k=1;k<i;k++){
-            cout<<"*";
-            cout<<" ";
-        }
-        cout<<"\n";
-
+    //space 
+    for(int k=0;k<2*i;k++){
+        cout<<" ";
     }
+    //star
+    for(int j=0;j<n-i;j++){
+        cout<<"*";
+    }cout<<endl;
+   }
+   
+   //lower
+   for(int i=n;i>=0;i--){
+    //star
+    for(int j=0;j<n-i;j++){
+        cout<<"*";
+    }
+    //space 
+    for(int k=0;k<2*i;k++){
+        cout<<" ";
+    }
+    //star
+    for(int j=0;j<n-i;j++){
+        cout<<"*";
+    }cout<<endl;
+   }
 }
