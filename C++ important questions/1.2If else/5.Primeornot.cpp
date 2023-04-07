@@ -19,5 +19,5 @@ int main()
     if (res == 0)
     {
         cout << "Prime number";
-    }
+    } 
 }

@@ -21,8 +21,10 @@ int main(){
     cout<<endl<<"Size:";
     cout<<v.size();
 
+
     //**********************************Important Functions of vector*******************************************
     /*
+    0.1.emplace_back()=Similar to the push_back but dynamically increase the size 
     1.pop_back()=Removes the last element of the vector
     2.size()=Gives the size of the vector
     3.capacity()=Shows that how much elements can a vector store
@@ -41,7 +43,52 @@ int main(){
     14.insert(position,value)=Used to insert the element in vector
     15.v.at(2)=Print the element at 2nd index
     16.v.front()=Return the first element
-    16.v.back()=Return the last element
+    17.v.back()=Return the last element
+    18.v.erase(start,end);
+    19.vector<int> x(v);==This will copy the vector here
+    20.v.swap(v2);v={1,2},v2={3,4} after swap=v={3,4} and v={1,2};
+    21.v.clear()=clears everything
+
     
     */
+
+   /*Iterators*/
+   cout<<"\nIterators\n";
+   vector<int>::iterator it=v.begin();
+   //    it++;
+      cout<<*(it)<<" ";
+   
+   //    vector<int>:: iterator it=v.end();
+   //    vector<int>:: iterator it=v.rend();
+   //    vector<int>:: iterator it=v.rbegin();
+   cout<<endl;
+   cout<<v[0]<<" "<<v.at(0)<<endl;
+   cout<<v.back()<<" ";
+   //For each loop
+   for(auto it:v){
+       cout<<it<<" ";
+   }
+
+   //erasing
+   v.erase(v.begin()+1);
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
 }

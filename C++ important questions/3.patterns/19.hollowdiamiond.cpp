@@ -41,7 +41,7 @@ int main(){
    }
    
    //lower
-   for(int i=n;i>=0;i--){
+   for(int i=n-1;i>=0;i--){
     //star
     for(int j=0;j<n-i;j++){
         cout<<"*";
