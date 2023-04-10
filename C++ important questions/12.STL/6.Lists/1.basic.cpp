@@ -18,4 +18,4 @@ int main(){
     l.emplace_front(40);
     p(l);
 
-}
+}  

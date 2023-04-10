@@ -27,15 +27,12 @@ int main(){
       flag=1;
       break;
     }
-
     if (array[mid] < x)
       low = mid + 1;
 
     else
       high = mid - 1;
-  }
-
-  
+  }  
         if(flag==0)cout<<"\nNot found"  ;
     cout<<"\n\nThis program is developed by:\nSimranjit Singh\nBCA-Semester-4\nRoll No.219922";
 }

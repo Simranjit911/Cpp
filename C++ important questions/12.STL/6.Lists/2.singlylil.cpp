@@ -14,6 +14,7 @@ using namespace std;
     };
     // traversing a ll
     void printl(node* &head){
+        system("cls");
         node* temp=head;
         while(temp!=NULL){
             cout<<temp->data<<" ";
