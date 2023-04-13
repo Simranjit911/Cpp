@@ -8,15 +8,15 @@ class node{
     node* next;
 
 };
-void insertfront(node &head,int data){
+void insertfront(node* &head,int data){
     //dynamically create he memory fro the new node
     node* newnode=(node*)malloc(sizeof(node));
 
     // assign data value
-    newnode->next= *head;
+    newnode->next= head;
 
     // reassign head to new node
-    *head=newnode;
+    head=newnode;
 }
 
 void deletfront(node &head){
